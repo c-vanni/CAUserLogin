@@ -27,11 +27,15 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
-    @Override
+    /**
+     * Sets the current user by name.
+     * @param name the name of the current user
+     */
     void setCurrentUser(String name);
 
-    @Override
-    String getCurrentUser() {
-        return "";
-    }
+    /**
+     * Gets the current user.
+     * @return the current user's name
+     */
+    String getCurrentUser();
 }
